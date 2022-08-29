@@ -1,0 +1,14 @@
+name: lisa_api_plumber
+title: lisa_api_plumber
+username: lisa.anders
+account: lisa.anders
+server: colorado.rstudio.com
+hostUrl: https://colorado.rstudio.com/rsc/__api__
+appId: 12490
+bundleId: 61380
+url: https://colorado.rstudio.com/rsc/content/09fafb81-3365-41c3-9117-04155991e10f/
+when: 1661797747.90464
+lastSyncTime: 1661797747.90466
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: README.md|shiny/app.R|using_simple_api.R
