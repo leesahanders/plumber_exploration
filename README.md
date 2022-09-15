@@ -34,7 +34,7 @@ or
 library(httr)
 
 connectApiUrl <- "https://connect.yourcompany.com/rest-api/route"
-connectApiKey <- "YfB5XBRB7slkkBSEi5qr93mWJvbpXQQy"
+connectApiKey <- Sys.getenv("CONNECT_API_KEY")
 
 resp <- GET(connectApiUrl,
             add_headers(Authorization = paste0("Key ", connectApiKey)))
@@ -86,7 +86,7 @@ Python
 import requests
 
 connect_api_url = "https://connect.yourcompany.com/rest-api/route"
-connect_api_key = "YfB5XBRB7slkkBSEi5qr93mWJvbpXQQy"
+connect_api_key <- Sys.getenv("CONNECT_API_KEY")
 
 response = requests.get(connect_api_url,
                         headers={'Authorization': 'Key ' + connect_api_key})
@@ -97,7 +97,7 @@ cURL
 
 ```
 export CONNECT_API_URL=https://connect.yourcompany.com/rest-api-example/endpoint
-export CONNECT_API_KEY=YfB5XBRB7slkkBSEi5qr93mWJvbpXQQy
+export CONNECT_API_KEY=""
 
 curl -H "Authorization: Key ${CONNECT_API_KEY}" ${CONNECT_API_URL}
 ```
